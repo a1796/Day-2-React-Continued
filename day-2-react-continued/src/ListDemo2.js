@@ -10,6 +10,7 @@ function Members(props){
     );
     return(
     <table>
+        <h2>Names List Demo</h2>
     {membersList}
     </table>
     )

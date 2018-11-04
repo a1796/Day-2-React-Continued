@@ -4,17 +4,22 @@
 
 
 .App-header {
-  background-color: tomato;
+  background-color: rgb(243, 241, 224);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
+  text-align: center;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: aquamarine;
+  color: tomato;
 }
 
 .App-link {
   color: #61dafb;
 }
 
+h2{
+  text-align: center;
+  color: tomato;
+}

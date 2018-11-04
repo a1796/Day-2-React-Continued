@@ -31,6 +31,7 @@ export default class ListDemo extends React.Component{
     render(){
         return(
             <div>
+                <h2>Number List Demo</h2>
                 <NumberList numbers={this.state.ListNumbers}/>
                 {/* <NumberTable numbers={this.state.ListNumbers}/> */}
             </div>
