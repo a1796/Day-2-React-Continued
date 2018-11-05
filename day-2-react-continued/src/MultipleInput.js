@@ -22,7 +22,7 @@ export default class Reservation extends React.Component {
         });
     }
 
-    handleSubmit(event){
+    handleSubmit(event) {
         alert(JSON.stringify(this.state));
         event.preventDefault();
     }
@@ -30,28 +30,36 @@ export default class Reservation extends React.Component {
     render() {
         return (
             <div>
-            <form onSubmit={this.handleSubmit}>
-                <h2>Multiple Input Demo</h2>
-                <label>
-                    Is going:
+                <form onSubmit={this.handleSubmit}>
+                    <h2>Multiple Input Demo</h2>
+                    <label>
+                        Is going:
             <input
-                        name="isGoing"
-                        type="checkbox"
-                        checked={this.state.isGoing}
-                        onChange={this.handleInputChange} />
-                </label>
-                <br />
-                <label>
-                    Number of guests:
+                            name="isGoing"
+                            type="checkbox"
+                            checked={this.state.isGoing}
+                            onChange={this.handleInputChange} />
+                    </label>
+                    <br />
+                    <label>
+                        Number of guests:
             <input
-                        name="numberOfGuests"
-                        type="number"
-                        value={this.state.numberOfGuests}
-                        onChange={this.handleInputChange} />
-                </label>
-                        <p>{JSON.stringify(this.state)}</p>
-            <input type="submit" value="Submit" />
-            </form>
+                            name="numberOfGuests"
+                            type="number"
+                            value={this.state.numberOfGuests}
+                            onChange={this.handleInputChange} />
+                    </label>
+                    <label>
+                        Name of first guest
+                        <input
+                            name="guest1"
+                            type="text"
+                            onChange={this.handleInputChange}
+                        />
+                    </label>
+                    <p>{JSON.stringify(this.state)}</p>
+                    <input type="submit" value="Submit" />
+                </form>
 
             </div>
         );

@@ -4,6 +4,7 @@ import ListDemo from "./ListDemo.js";
 import ListDemo2 from "./ListDemo2.js";
 import Forms from "./FormDemo.js";
 import MultipleInput from "./MultipleInput.js";
+import Jokes from "./jokeStore.js";
 
 class App extends Component {
   render() {
