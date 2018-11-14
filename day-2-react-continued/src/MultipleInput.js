@@ -56,6 +56,11 @@ export default class Reservation extends React.Component {
                             type="text"
                             onChange={this.handleInputChange}
                         />
+                                                <input
+                            name="guest2"
+                            type="text"
+                            onChange={this.handleInputChange}
+                        />
                     </label>
                     <p>{JSON.stringify(this.state)}</p>
                     <input type="submit" value="Submit" />
